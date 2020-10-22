@@ -1,0 +1,12 @@
+package com.nttdata.basic;
+
+public class DollarConversion {
+	public static void main(String[] args) {
+		
+		float french=6.85062;
+		int us=2;
+		float result=2*french;
+		System.out.println("result is " + result);
+	}
+
+}

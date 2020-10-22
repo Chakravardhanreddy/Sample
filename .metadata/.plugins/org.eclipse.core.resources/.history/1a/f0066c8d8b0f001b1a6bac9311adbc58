@@ -1,0 +1,14 @@
+package com.nttdata.Calculator;
+
+public class Calculator1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Subtraction  a2 =(a,b)-> {System.out.println("Subtraction of two numbers "+(a-b));};
+		a2.add(42, 24);
+		
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.nttdata.Calculator;
+
+public interface Greetings {
+	
+	void greet(String name);
+
+	
+
+}

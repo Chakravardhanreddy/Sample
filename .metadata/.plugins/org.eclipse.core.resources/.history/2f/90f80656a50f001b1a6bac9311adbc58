@@ -1,0 +1,32 @@
+package com.nttdata.Str;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class WithStr {
+	
+	public static void main(String[] args) {
+		
+		
+		Set<Product>list=new HashSet<>();
+		list.add(new Product(12,"Laptop",40000));
+		list.add(new Product(4,"Mobile",20000));
+		list.add(new Product(10,"Computer",50000));
+		list.add(new Product(15,"TV",15000));
+		list.add(new Product(11,"AC",10000));
+		
+		List<Double> listD=new ArrayList<>();
+		
+		Set<Double>d=list.stream().filter(p->p.price <20000).map(p->p.price)
+				.collect(Collections.toSet());
+		list.stream().filter(p->p.price>10000).forEach(p->System.out::println);
+		System.out.println(d);
+		
+		
+		
+	}
+
+}

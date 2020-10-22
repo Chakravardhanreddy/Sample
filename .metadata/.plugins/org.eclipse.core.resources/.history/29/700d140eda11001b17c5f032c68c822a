@@ -1,0 +1,30 @@
+package com.nttdata.Assignment1;
+
+
+
+public class Customer {
+	
+	int id;
+	String name,password,city;
+	int price;
+	public Customer(int id, String name, String password, String city, int price) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.password = password;
+		this.city = city;
+		this.price = price;
+	}
+	
+	
+
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", name=" + name + ", password=" + password + ", city=" + city + ", price="
+				+ price + "]";
+	}
+	
+	
+	
+
+}

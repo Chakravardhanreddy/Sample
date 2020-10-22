@@ -1,0 +1,52 @@
+package com.nttdata.ChracterStream;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class DataOutputStreamEx {
+	
+	void writeData()
+	{
+	try {
+	DataOutputStream dout=new DataOutputStream(new FileOutputStream("Test.txt"));
+
+	dout.writeInt(33);
+	dout.writeDouble(44.4);
+	dout.writeLong(4567);
+	dout.writeBoolean(false);
+	dout.writeChar('D');
+	System.out.println("Data written sucessfully");
+
+	} catch (IOException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+	}
+
+	}
+	void readData()
+	{
+	try {
+	DataInputStream din=new DataInputStream(new FileInputStream("Test.txt"));
+	int a=din.readInt();
+	long b=din.readLong();
+	boolean c=din.readBoolean();
+	char d=din.readChar();
+	double e=din.readDouble();
+	System.out.println("Values read from file are"+a+"\n"+b+"\n"+c+"\n"+d+"\n"+e);
+
+	} catch (IOException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+	}
+	}
+	public static void main(String[] args) {
+
+	DataOutputStreamEx d=new DataOutputStreamEx();
+	d.writeData();
+	//d.readData();
+	}
+
+}

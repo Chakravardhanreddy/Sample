@@ -1,0 +1,16 @@
+package com.nttdata.Calculator;
+
+public class ClientGr {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String name1="Chakri";
+		Greetings g1=(s1)->{System.out.println(s1+" hi, good morning");};
+		g1.greet(name1);
+		
+		
+
+	}
+
+}

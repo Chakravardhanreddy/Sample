@@ -1,0 +1,35 @@
+package com.nttdata.Assignment1;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+import com.nttdata.collection.Queue.Product;
+
+
+
+public class Client1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		TreeMap<Integer,Customer> treeMap=new TreeMap<>();
+		treeMap.put(1, new Customer(111,"chakri","abc","delhi",1000));
+		treeMap.put(3, new Customer(122,"shaw","def","delhi",7000));
+		treeMap.put(2, new Customer(113,"dhawan","swg","mumbai",9000));
+		treeMap.put(5, new Customer(117,"iyer","gfg","mumbai",8000));
+		treeMap.put(4, new Customer(110,"rishab","vhh","banglore",6000));
+		treeMap.put(7, new Customer(123,"hetmyer","ssd","banglore",5000));
+		treeMap.put(9, new Customer(182,"stoinis","shv","banglore",4000));
+		treeMap.put(8, new Customer(13,"axar","zsa","chennai",12000));
+		treeMap.put(11, new Customer(191,"rabada","jut","chennai",13000));
+		treeMap.put(10, new Customer(141,"ashwin","hjn","hyderabad",16000));
+		treeMap.put(15, new Customer(171,"nortje","csa","hyderabad",17000));
+		treeMap.put(14, new Customer(121,"ponting","dfe","hyderabad",19000));
+		
+		for(Map.Entry<Integer, Customer> m:treeMap.entrySet())
+		{
+			System.out.println("Key is :"+m.getKey()+ "\t"+"value is"+m.getValue());
+		}
+	}
+
+}

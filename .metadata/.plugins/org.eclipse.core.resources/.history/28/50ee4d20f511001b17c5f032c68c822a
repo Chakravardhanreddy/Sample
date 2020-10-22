@@ -1,0 +1,50 @@
+package com.nttdata.Assignment1;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+import com.nttdata.Str.Product;
+
+public class ClientEmp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Set<Employee>list=new HashSet<>();
+		list.add(new Employee(11,"chakri","hyderabad",50000));
+		list.add(new Employee(14,"prithvi","hyderabad",40000));
+		list.add(new Employee(12,"dhawan","delhi",60000));
+		list.add(new Employee(16,"shreyas","hyderabad",30000));
+		list.add(new Employee(17,"rishabh","delhi",12000));
+		list.add(new Employee(19,"stoinis","mumbai",15000));
+		list.add(new Employee(21,"axar","banglore",20000));
+		list.add(new Employee(24,"rabada","banglore",70000));
+		list.add(new Employee(25,"rohit","chennai",13000));
+		list.add(new Employee(31,"rajesh","banglore",60000));
+		list.add(new Employee(33,"rahul","chennai",14000));
+		list.add(new Employee(34,"virat","chennai",90000));
+		list.add(new Employee(32,"navdeep","hyderabad",50000));
+		list.add(new Employee(44,"mayank","hyderabad",14000));
+		list.add(new Employee(45,"srinu","hyderabad",25000));
+
+		
+		List<Double> listD=new ArrayList<>();
+		
+		/*Set<Double> d=list.stream().filter(p->20000<p.sal<10000).map(p->p.sal)
+				.collect(Collectors.toSet());
+		*/
+		
+		
+		long c=list.stream().filter(p->p.getCity().equals("hyderabad")).count();
+		System.out.println(c);
+		
+		Double dd=list.stream().map(p->p.sal).reduce(0.0, (sum,price)->(sum+sal));
+		
+	}
+	
+	
+
+}

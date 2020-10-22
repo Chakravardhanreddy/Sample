@@ -1,0 +1,10 @@
+package com.nttdata.Assignment;
+
+public class Addition {
+	
+	static int add(int a,intb)
+	{
+		return a+b;
+	}
+
+}

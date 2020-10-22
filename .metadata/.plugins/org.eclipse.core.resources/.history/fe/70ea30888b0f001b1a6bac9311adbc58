@@ -1,0 +1,15 @@
+package com.nttdata.Calculator;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		
+		Addition a1 =(a,b)-> {System.out.println("Addition of two numbers "+(a+b));};
+		a1.add(42, 24);
+		
+		
+	
+
+	}
+
+}

@@ -1,0 +1,37 @@
+package com.nttdata.exceptions;
+
+import com.nttdata.abstrac.Account;
+
+public abstract class Bank {
+	
+	private String bName;
+	private int bCode;
+	Account account;
+	public Bank(String bName, int bCode, Account account) {
+		super();
+		this.bName = bName;
+		this.bCode = bCode;
+		this.account = account;
+	}
+	public String getbName() {
+		return bName;
+	}
+	public void setbName(String bName) {
+		this.bName = bName;
+	}
+	public int getbCode() {
+		return bCode;
+	}
+	public void setbCode(int bCode) {
+		this.bCode = bCode;
+	}
+	public Account getAccount() {
+		return account;
+	}
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+
+	
+
+}

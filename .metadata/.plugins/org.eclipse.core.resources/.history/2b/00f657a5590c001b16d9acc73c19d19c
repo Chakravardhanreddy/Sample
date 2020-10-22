@@ -1,0 +1,13 @@
+package com.nttdata.exceptions;
+
+
+
+public class User extends Bank  {
+	
+	}
+	
+	
+				
+	
+
+}

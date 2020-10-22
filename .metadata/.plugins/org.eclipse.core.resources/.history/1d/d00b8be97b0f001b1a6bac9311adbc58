@@ -1,0 +1,10 @@
+package com.nttdata.Calculator;
+
+import java.util.Comparator;
+
+public interface e1 {
+
+	Comparator e2 = null;
+	Object name = null;
+
+}

@@ -1,0 +1,8 @@
+package com.nttdata.Calculator;
+
+public class Employee {
+	
+	int Id;
+	String name;
+
+}

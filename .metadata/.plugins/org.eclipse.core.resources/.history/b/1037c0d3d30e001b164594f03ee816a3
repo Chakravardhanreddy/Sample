@@ -1,0 +1,22 @@
+package com.nttdata.ByteStrea;
+
+public class Customer {
+	
+	transient int a;
+	static int b;
+	String name;
+	int age;
+	public Customer(int a, String name, int age) {
+		super();
+		this.a = a;
+		this.name = name;
+		this.age = age;
+	}
+	
+	
+	void print(Employee e)
+	{
+		
+	}
+
+}

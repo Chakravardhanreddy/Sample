@@ -1,0 +1,46 @@
+package com.nttdata.exceptions;
+
+public class User extenda Bank {
+	
+	String userName;
+	String password;
+	Account account;
+	public User(String userName, String password, Account account) {
+		super();
+		this.userName = userName;
+		this.password = password;
+		this.account = account;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public Account getAccount() {
+		return account;
+	}
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+	
+	
+	void display()
+	{
+		System.out.println("details of user :");
+		System.out.println("Bank name :"+getbankName());
+		System.out.println("Bank Ifsc :"getbankIfsc());
+		System.out.println("user name :"+userName);
+		System.out.println("password :"+password);
+		System.out.println("Account number :"+account.accNo);
+		System.out.println("Balance :"+account.bal);
+		
+	}
+
+}

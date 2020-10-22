@@ -1,0 +1,52 @@
+package com.nttdata.Assignment1;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+import com.nttdata.Str.Product;
+
+public class ClientEmp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	List<Employee>list=new ArrayList<>();
+		list.add(new Employee(11,"chakri","hyderabad",50000));
+		list.add(new Employee(14,"prithvi","hyderabad",40000));
+		list.add(new Employee(12,"dhawan","delhi",60000));
+		list.add(new Employee(16,"shreyas","hyderabad",30000));
+		list.add(new Employee(17,"rishabh","delhi",12000));
+		list.add(new Employee(19,"stoinis","mumbai",15000));
+		list.add(new Employee(21,"axar","banglore",20000));
+		list.add(new Employee(24,"rabada","banglore",70000));
+		list.add(new Employee(25,"rohit","chennai",13000));
+		list.add(new Employee(31,"rajesh","banglore",60000));
+		list.add(new Employee(33,"rahul","chennai",14000));
+		list.add(new Employee(34,"virat","chennai",90000));
+		list.add(new Employee(32,"navdeep","hyderabad",50000));
+		list.add(new Employee(44,"mayank","hyderabad",14000));
+		list.add(new Employee(45,"srinu","hyderabad",25000));
+
+		
+		
+		
+		System.out.println("Number of employees whose salary is in between 10000 and 20000 and increment of their salary by 5%");
+		list.stream().filter(p->(p.sal>10000 && p.sal<20000)).forEach(p->System.out.println(p.sal+(p.sal*5/100)));
+		System.out.println("number of employees at each location");
+		
+		
+		long c=list.stream().filter(p->p.getCity().equals("hyderabad")).count();
+		System.out.println(c);
+		
+		
+		Double dd=list.stream().map(p->p.sal).reduce(0.0, (sum,sal)->(sum+sal));
+		System.out.println(dd);
+		
+	}
+	
+	
+
+}

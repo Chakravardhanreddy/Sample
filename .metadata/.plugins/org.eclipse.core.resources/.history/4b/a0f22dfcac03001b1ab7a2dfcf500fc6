@@ -1,0 +1,10 @@
+package com.nttdata.basic;
+
+public class MinVariables {
+	public static void main(String[] args) {
+		
+		int intValue=Integer.MIN_VALUE;
+		System.out.println("value of integer is "+ intValue);
+	}
+
+}
